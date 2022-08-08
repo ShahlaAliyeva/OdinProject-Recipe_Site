@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;700&family=Nanum+Gothic:wght@700;800&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,900;1,600&display=swap');
+
+#main-section {
+    margin-bottom: 2.4em;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.img-container {
+    margin-bottom: 2.3em;
+}
+
+.img-container .img-content {
+    font-weight: 700;
+    color: #515151;
+    margin-top: 1em;
+}
+
+.main-img-container h4{
+    margin-top: 1em;
+    font-weight: 700;
+    font-size: 1.6em;
+    font-family: 'Montserrat Alternates', sans-serif;
+    width: fit-content;
+    transition: all ease-in .4s;
+}
+
+#main-section .card {
+    width: 87% !important;
+}
+
+#main-section .card h4 {
+    font-weight: 700;
+    font-size: 2em;
+    letter-spacing: .5px;
+}
+
+#main-section .card>.list-group {
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+.list-group-item {
+    border: none !important;
+    display: flex;
+}
+
+.list-group-item img {
+    margin-right: .5em;
+}
+
+.img-container a, .list-group-item a{
+    text-decoration-color: #F15025;
+    text-decoration-thickness: 2px;
+}
+
+.list-group-item a {
+    font-size: .9em;
+}

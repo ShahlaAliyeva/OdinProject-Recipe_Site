@@ -1,0 +1,212 @@
+.explore {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: .1em;
+    flex-wrap: wrap;
+    z-index: 201;
+    height: 100%;
+}
+
+.box-model {
+    background-color: rgb(235, 235, 235);
+    width: 65em;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: .1em;
+    height: 100%;
+}
+
+.explore-close-icon {
+    left: 34.2em;
+    top: .6em;
+    position: fixed;
+    cursor: pointer;
+    font-size: 1.8em;
+    color: #b6b6b6;
+    z-index: 210;
+}
+
+.explore-close-icon:hover {
+    color: rgb(129, 129, 129);
+}
+
+.explore .pop-up-content {
+    position: sticky;
+    top: 9%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: #F15025; */
+    color: #000;
+    overflow-y: scroll;
+}
+
+.explore .side-menu {
+    overflow-y: scroll;
+    height: 27em;
+}
+
+.explore .side-menu ul li {
+    list-style: none;
+    padding: 1em 1.3em;
+    transition: all ease-in-out .4s;
+}
+
+.explore .side-menu ul li a.side-menu-item {
+    text-transform: capitalize;
+    font-size: .8em;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all ease-in-out .3s;
+}
+
+.explore .side-menu ul li a:hover {
+    text-decoration: none;
+}
+
+.explore .side-menu ul li:not(:first-child):hover {
+    background-color: #F15025;
+}
+
+.explore .side-menu ul li:not(:first-child):hover a {
+    color: rgb(239, 239, 239);
+}
+
+.explore .side-menu ul li a.side-menu-icon {
+    padding: 0 .5em;
+    z-index: 10;
+}
+
+.active {
+    background-color: #F15025;
+    opacity: .9;
+}
+
+.active a.side-menu-item {
+    color: rgb(239, 239, 239);
+}
+
+.explore .content-side .card img {
+    border-radius: 50%;
+}
+
+.explore .content-side .card .card-title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.explore .content-side .card .card-text {
+    font-size: .8em;
+}
+
+.explore .content-side {
+    max-height: 91vh;
+}
+
+.explore .content-side .content-side-header {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.7em;
+}
+
+.explore .content-side .content-side-container {
+    margin-bottom: 2em !important;
+    padding-bottom: 1em !important;
+}
+
+.explore .content-side .card .card-footer {
+    background-color: #F15025;
+    opacity: .8;
+    text-align: end;
+    transition: all ease-in-out .3s;
+}
+
+.explore .content-side .card .card-footer a:hover {
+    cursor: pointer;
+}
+
+.explore .content-side .card .card-footer:hover{
+    opacity: 1;
+}
+
+.explore #breakfast-content .content-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.explore #breakfast-content .content-header span a{
+    font-size: .8em !important;
+}
+
+.explore .content-side .content-side-header, .explore .content-header span a {
+    margin-top: .8em;
+    font-weight: 600;
+}
+
+.explore .content-side #breakfast-content .content-side-list ul li{
+    list-style: none;
+    margin-bottom: 1.5em;
+    font-size: .8em;
+    font-weight: 400;
+}
+
+.explore .content-side #breakfast-content .content-side-list ul li a {
+    text-decoration-thickness: .2em;
+    transition: none;
+}
+
+.explore .content-side #breakfast-content .content-side-list ul li a:hover {
+    text-decoration-color: #F15025;
+}
+
+.explore .content-side #breakfast-content .card-title {
+    font-size: 1.5em;
+    line-height: 1.4em;
+}
+
+.explore .content-side #breakfast-content .card-text {
+    font-size: 1em;
+}
+
+
+
+/* Content side icindeki ayri ayri sectionlarin displayleri*/
+
+.explore #explore-content {
+    display: none;
+}
+
+.explore #breakfast-content {
+    display: none;
+}
+
+/* ------------------------------------------------------- */
+
+
+
+/* get background darker */
+
+.site-cache {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 200;
+    background-color: rgba(0,0,0,.6);
+    display: none;
+}
+
+/* body explore achilanda qaralir scroll dayanir */
+
+.disable-scroll{
+    overflow-y: hidden;
+  }

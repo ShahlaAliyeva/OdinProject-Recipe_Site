@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>All Reciepes | Foods, Meals</title>
+    <!--CSS Links-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/search-section.css">
+    <link rel="stylesheet" href="./assets/css/main-section.css">
+    <link rel="stylesheet" href="./assets/css/raiting-section.css">
+    <link rel="stylesheet" href="./assets/css/news-section.css">
+    <link rel="stylesheet" href="./assets/css/recommend-section.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/explore.css">
+    <link rel="stylesheet" href="./assets/css/scrolllbar.css">
+
+    <!-- JS links -->
+    <script src="./assets/js/navbar.js" defer></script>
+    <script src="./assets/js/explore.js" defer></script>
+</head>
+
+<body class="position-relative">
+    <nav id="navbar" class="main-nav">
+        <div class="container">
+            <div class="row">
+                <div class="nav-left col-8">
+                    <i class="toggle-pop-up fa-solid fa-bars"></i> <span>EXPLORE</span>
+                    <span id="logo">allrecipes <i class="fa-solid fa-utensils"></i></span>
+                </div>
+                <div class="nav-right col-4">
+                    <i id="user" class="fa-solid fa-user"></i>
+                    <span id="join" class="nav-tog">Join Now <i class="fa-solid fa-caret-down"></i></span>
+                    <div class="join-collapse nav-join-collapse">
+                        <div class="row">
+                            <span class="menu-header">
+                                account
+                            </span>
+                            <ul class="mb-2">
+                                <li class="menu-item nav-menu"><a href="#">newsletters</a></li>
+                                <li class="menu-item nav-menu"><a href="#">help</a></li>
+                            </ul>
+                        </div>
+                        <hr class="my-0 mx-auto">
+                        <div class="row">
+                            <span class="menu-header">
+                                more
+                            </span>
+                            <ul class="mb-2">
+                                <li class="menu-item nav-menu"><a href="#">add a reciepe</a></li>
+                                <li class="menu-item nav-menu"><a href="#">shopping list</a></li>
+                                <li class="menu-item nav-menu"><a href="#">ask the community</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span id="login">Login</span>
+                    <span id="get-reciepe">GET ALLRECIPES MAGAZINE</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="search-section">
+        <div class="container">
+            <div class="row">
+
+                <div id="search-side" class="col-4">
+                    <div id="search-side" class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Find a reciepe" aria-label="Find a reciepe"
+                            aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn" type="button" id="button-addon2"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+
+                    <a id="search-anchor" href="#">SEARCH BY INGREDIENT</a>
+                </div>
+
+                <div class="col-7">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="main-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-3">
+                    <div class="row img-container">
+                        <div class="row">
+                            <img src="./img/main-1.webp" alt="">
+                        </div>
+                        <div class="row">
+                            <a href="#">
+                                <p class="img-content">
+                                    10 Overnight Recipes That Save You Prep Time the Next Day
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row img-container">
+                        <div class="row">
+                            <img src="./img/main-2.webp" alt="">
+                        </div>
+                        <div class="row">
+                            <a href="#">
+                                <p class="img-content">
+                                    10 Garlic Pasta Recipes That Prove Garlic and Noodles Are a Perfect Pair
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="row main-img-container">
+                        <div class="row">
+                            <img src="./img/main-top.webp" alt="">
+                        </div>
+                        <div class="row">
+                            <a href="#">
+                                <h4>Chicken Thigh Recipes</h4>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <p class="main-img-content">
+                                Chicken thighs make an easy and inexpensive dinner. Find recipes for baked, grilled, or
+                                even slow cooked chicken thighs, perfect for any night of the week.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 mr-3">
+                    <div class="card">
+                        <h4 class="text-center my-3 border-bottom-0">
+                            Most Popular
+                        </h4>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item align-items-start">
+                                <img src="./img/popular-1.webp" alt="popular">
+                                <a href="#">Best Prime Day Deals</a>
+                            </li>
+                            <li class="list-group-item align-items-start">
+                                <img src="./img/popular-2.webp" alt="popular">
+                                <a href="#">16 Ways To Enjoy Strawberries With Balsamic Vinegar</a>
+                            </li>
+                            <li class="list-group-item align-items-start">
+                                <img src="./img/popular-3.webp" alt="popular">
+                                <a href="#">21 Irresistible Ways to Use Leftover Brewed Coffee</a>
+                            </li>
+                            <li class="list-group-item align-items-start">
+                                <img src="./img/popular-4.webp" alt="popular">
+                                <a href="#">15 Impressive No-Cook Summer Appetizers</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="raiting-section">
+        <div class="container">
+            <div id="cards" class="row">
+                <div class="col-8">
+                    <div class="row mb-4">
+                        <div class="col-8">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-1.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Summer Special Shrimp and Fruit Fried Rice</h5>
+                                    </a>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-2.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-3.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-4.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-5.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-6.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-7.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-8.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-9.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-10.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-11.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="news-section">
+        <div class="container">
+            <div class="row">
+                <h2>News & Trending</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-5 news-card">
+                    <ul class="list-group">
+                        <li class="list-group-item align-items-start">
+                            <img src="./img/news-1.webp" alt="news">
+                            <a href="#">Best Prime Day Deals</a>
+                        </li>
+                        <li class="list-group-item align-items-start">
+                            <img src="./img/news-2.webp" alt="news">
+                            <a href="#">16 Ways To Enjoy Strawberries With Balsamic Vinegar</a>
+                        </li>
+                        <li class="list-group-item align-items-start">
+                            <img src="./img/news-3.webp" alt="news">
+                            <a href="#">21 Irresistible Ways to Use Leftover Brewed Coffee</a>
+                        </li>
+                        <li class="list-group-item align-items-start">
+                            <img src="./img/news-4.webp" alt="news">
+                            <a href="#">15 Impressive No-Cook Summer Appetizers</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-7 news-main-img">
+                    <div class="row">
+                        <img src="./img/news-main-right.webp" alt="">
+                        <h4><a href="#">
+                                Bethenny Frankel Wants This Salad To Have a Star on the Hollywood Walk of Fame—So We
+                                Tried It
+                            </a></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="raiting-section">
+        <div class="container">
+            <div id="cards" class="row">
+                <div class="col-8">
+                    <div class="row mb-4">
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-9.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-10.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-11.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-
+                    <div class="row mb-4">
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-3.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-4.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-5.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-6.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-7.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-8.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-9.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-10.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-11.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recommend-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="row content m-0">
+                        <div class="row">
+                            <span class="p-0"><a href="#">Collection of the Day</a></span>
+                        </div>
+
+                        <div class="row">
+                            <h3 class="p-0"><a href="#">7 Fresh Tomato Casseroles</a></h3>
+                        </div>
+
+                        <div class="row">
+                            <p class="p-0">
+                                These recipes couldn't be easier to make, and they make summer tomatoes the star of the
+                                show!
+                            </p>
+                        </div>
+
+                        <div class="row">
+                            <button class="bg-light btn">
+                                View Full Gallery
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 images">
+                    <div class="row">
+                        <div class="col-4 rec-img-container">
+                            <img src="./img/rec-1.webp" alt="">
+                        </div>
+                        <div class="col-4 rec-img-container">
+                            <img src="./img/rec-2.webp" alt="">
+                        </div>
+                        <div class="col-4 rec-img-container">
+                            <img src="./img/rec-3.webp" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="raiting-section">
+        <div class="container">
+            <div id="cards" class="row">
+                <div class="col-8">
+                    <div class="row mb-4">
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-9.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-10.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-11.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-3.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-4.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-5.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-6.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-7.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-8.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-9.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-10.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-11.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-9.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-10.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-11.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-6.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-7.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 align-self-stretch">
+                            <div class="raiting-card">
+                                <a href="#" class="save-icon"><i class="fa-regular fa-heart"></i></a>
+                                <img class="card-img-top" src="./img/raiting-8.webp" alt="food">
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">Strawberry Salsa</h5>
+                                    </a>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk
+                                        of the card's content.</p>
+                                    <div class="raiting-stars">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa-solid fa-star-half-stroke"></span>
+                                        <span class="fa-regular fa-star"></span>
+                                        <span class="raiting-count">3</span>
+                                    </div>
+
+                                    <div class="chief-name">
+                                        <span>By <strong><a href="#">Donald C</a></strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <span id="footer-logo">allrecipes<i class="fa-solid fa-utensils"></i></span>
+            <div class="row">
+                <div class="col-4 footer-item">
+                    <div class="row">
+                        <h3>Magazines & More</h3>
+                    </div>
+                    <div class="row">
+                        <a href="#">
+                            <img id="footer-img" src="./img/footer-img.webp" alt="img-footer">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4 footer-item">
+                    <div class="row">
+                        <h3>Learn More</h3>
+                    </div>
+                    <div class="row">
+                        <ul>
+                            <li><a href="#">
+                                    About us
+                                </a></li>
+                            <li><a href="#">
+                                    Contact us
+                                </a></li>
+                            <li><a href="#">
+                                    Editorial Guidelines
+                                </a></li>
+                            <li><a href="#">
+                                    subscribe
+                                </a></li>
+                            <li><a href="#">
+                                    apps
+                                </a></li>
+                            <li><a href="#">
+                                    advertise
+                                </a></li>
+                            <li><a href="#">
+                                    content licensing
+                                </a></li>
+                            <li><a href="#">
+                                    careers
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4 footer-item">
+                    <div class="row">
+                        <h3>Connect</h3>
+                    </div>
+                    <div id="media-links">
+                            <a class="sm-link" href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a class="sm-link" href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a class="sm-link" href="#">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </a>
+                            <a class="sm-link" href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                    </div>
+                    <div class="row">
+                        <span class="subscribtion"><a href="#">Subscribe to Our Newsletter</a></span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row copyright-container">
+            <span class="copyright">This page is built by <a href="https://github.com/ShahlaAliyeva" target="_blank">Shahla Aliyeva</a> © Copyright 2022. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <section class="explore">
+        <div class="box-model">
+            <i class="explore-close-icon fa-solid fa-xmark"></i>
+            <nav id="navbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="nav-left col-5">
+                            <span id="logo">allrecipes <i class="fa-solid fa-utensils"></i></span>
+                        </div>
+                        <div class="nav-right col-7">
+                            <div id="media-links">
+                                <a class="sm-link" href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a class="sm-link" href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a class="sm-link" href="#">
+                                    <i class="fa-brands fa-pinterest-p"></i>
+                                </a>
+                                <a class="sm-link" href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                        </div>
+                            <i id="user" class="fa-solid fa-user"></i>
+                            <span id="join" class="explore-nav">Join Now <i class="fa-solid fa-caret-down"></i></span>
+                            <div class="join-collapse explore-join-collapse">
+                                <div class="row">
+                                    <span class="menu-header">
+                                        account
+                                    </span>
+                                    <ul class="mb-2">
+                                        <li class="menu-item explore-menu"><a href="#">newsletters</a></li>
+                                        <li class="menu-item explore-menu"><a href="#">help</a></li>
+                                    </ul>
+                                </div>
+                                <hr class="my-0 mx-auto">
+                                <div class="row">
+                                    <span class="menu-header">
+                                        more
+                                    </span>
+                                    <ul class="mb-2">
+                                        <li class="menu-item explore-menu"><a href="#">add a reciepe</a></li>
+                                        <li class="menu-item explore-menu"><a href="#">shopping list</a></li>
+                                        <li class="menu-item explore-menu"><a href="#">ask the community</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <span id="login">Sweeptakes</span>
+                            <span id="get-reciepe">GET ALLRECIPES MAGAZINE</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="row mx-0 pop-up-content">
+                <div class="col-3 side-menu px-0">
+                    <ul class="px-1">
+                        <li><a href="" class="side-menu-item">
+                            <span>find a reciepe</span> <i class="fa-solid fa-magnifying-glass"></i>
+                        </a></li>
+                        <li id="explore"><a href="" class="side-menu-item"><span> Explore </span> <i class="fa-solid fa-angle-right side-menu-icon"></i></a></li>
+                        <li id="breakfast"><a href="" class="side-menu-item"> breakfast and brunch recipes <i class="fa-solid fa-angle-right side-menu-icon"></i></a></li>
+                        <li><a href="" class="side-menu-item">chicken recipes <i class="fa-solid fa-angle-right side-menu-icon"></i></a></li>
+                        <li><a href="" class="side-menu-item">beef recipes <i class="fa-solid fa-angle-right side-menu-icon"></i></a></li>
+                        <li><a href="" class="side-menu-item">pork recipes <i class="fa-solid fa-angle-right side-menu-icon"></i></a></li>
+                        <li><a href="" class="side-menu-item">lunch recipes <i class="fa-solid fa-angle-right side-menu-icon"></i></a></li>
+                        <li><a href="" class="side-menu-item">dinner recipes <i class="fa-solid fa-angle-right side-menu-icon"></i></a></li>
+                        <li><a href="" class="side-menu-item">appetizer & snack recipes <i class="fa-solid fa-angle-right side-menu-icon"></i></a></li>
+                        <li><a href="" class="side-menu-item">bread recipes <i class="fa-solid fa-angle-right side-menu-icon"></i></a></li>
+                        <li><a href="" class="side-menu-item">dessert recipes <i class="fa-solid fa-angle-right side-menu-icon"></i></a></li>
+                        <li><a href="" class="side-menu-item">drink recipes <i class="fa-solid fa-angle-right side-menu-icon"></i></a></li>
+                        <li><a href="" class="side-menu-item">main dishes <i class="fa-solid fa-angle-right side-menu-icon"></i></a></li>
+                        <li><a href="" class="side-menu-item">salad recipes <i class="fa-solid fa-angle-right side-menu-icon"></i></a></li>
+                        <li><a href="" class="side-menu-item">side dish recipes <i class="fa-solid fa-angle-right side-menu-icon"></i></a></li>
+                        <li><a href="" class="side-menu-item">soup, stew & chili recipes <i class="fa-solid fa-angle-right side-menu-icon"></i></a></li>
+                        <li><a href="" class="side-menu-item">cooking style <i class="fa-solid fa-angle-right side-menu-icon"></i></a></li>
+                        <li><a href="" class="side-menu-item">diet, healthy recipes <i class="fa-solid fa-angle-right side-menu-icon"></i></a></li>
+                        <li><a href="" class="side-menu-item">holidays and entertaining <i class="fa-solid fa-angle-right side-menu-icon"></i></a></li>
+                        <li><a href="" class="side-menu-item">world cuisine <i class="fa-solid fa-angle-right side-menu-icon"></i></a></li>
+                        <li><a href="" class="side-menu-item">kitchen tips</a></li>
+                        <li><a href="" class="side-menu-item">allrecipes magazine recipes</a></li>
+                        <li><a href="" class="side-menu-item">food wishes</a></li>
+                        <li><a href="" class="side-menu-item">homemade podcast</a></li>
+                        <li><a href="" class="side-menu-item">trusted brands</a></li>
+                        <li><a href="" class="side-menu-item">food news and trends <i class="fa-solid fa-angle-right side-menu-icon"></i></a></li>
+                        <li><a href="" class="side-menu-item">about us</a></li>
+                    </ul>
+                </div>
+                <div class="col-9 content-side pt-3 pb-5 px-5">
+                    <div id="explore-content">
+                        <h3 class="content-side-header">Explore</h3>
+                    <hr class="mt-2 mb-4">
+                    <div class="content-side-container">
+                        <div class="row row-cols-1 row-cols-md-3 g-2">
+                        <div class="col">
+                          <div class="card h-100 bg-transparent">
+                            <img src="./img/explore-img-1.webp" class="card-img-top w-75 mx-3 my-2 align-self-center" alt="...">
+                            <div class="card-body text-center pt-0">
+                              <h5 class="card-title"><a href="">How to Sharpen Your  Kitchen Knives at Home</a></h5>
+                              <p class="card-text">Whether you use a handheld sharpener or a sharpening stone, learning to sharpen your dull kitchen knives is a skill you’ll value forever.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="read-more-tag">Read more <i class="fa-solid fa-caret-right"></i></a>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100 bg-transparent">
+                            <img src="./img/explore-img-2.webp" class="card-img-top w-75 mx-3 my-2 align-self-center" alt="...">
+                            <div class="card-body text-center pt-0">
+                              <h5 class="card-title"><a href="">5 Tips for Making the Perfect Quesadilla Every Time</a></h5>
+                              <p class="card-text">Upgrade your quesadillas with these expert-approved hacks.</p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="read-more-tag">Read more <i class="fa-solid fa-caret-right"></i></a>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100 bg-transparent">
+                            <img src="./img/explore-img-3.webp" class="card-img-top w-75 mx-3 my-2 align-self-center" alt="...">
+                            <div class="card-body text-center pt-0">
+                              <h5 class="card-title"><a href="">Our 22 Best Ever Summer Side Dishes</a></h5>
+                              <p class="card-text">Summertime calls for classic potluck recipes, portable foods, and dining al fresco. Want to dig into the best side dishes of the season and discover tantalizing flavors along the way? From pan-fried Southern fare to chilled, garden-fresh Spanish soup, we've compiled incredibly delicious offerings that will fill you up and minimize fuss during the dog days of summer. Find your new favorite summer side dish right here. </p>
+                            </div>
+                            <div class="card-footer">
+                              <a class="read-more-tag">Read more <i class="fa-solid fa-caret-right"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                      </div>
+                    </div>
+
+                    <div id="breakfast-content">
+                        <div class="content-header row">
+                            <h3 class="content-side-header col-7 mb-0">Breakfast and Brunch Recipes 
+                            </h3>
+                            <span class="col-5"><a href="">SEE ALL BREAKFAST AND BRUNCH RECIPES</a></span>
+                        </div>
+                    <hr class="mt-2 mb-4">
+                    <div class="content-side-container row row-cols-1 row-cols-md-3 g-2">
+                        <div class="col content-side-list">
+                            <ul class="p-0">
+                                <li><a href="">Breakfast Burrito Recipes</a></li>
+                                <li><a href="">Crepe Recipes</a></li>
+                                <li><a href="">French Toast Recipes</a></li>
+                                <li><a href="">Granola Recipes</a></li>
+                                <li><a href="">Overnight Oat Recipes</a></li>
+                                <li><a href="">Quiche Recipes</a></li>
+                            </ul>
+                        </div>
+                        <div class="col content-side-list">
+                            <ul class="p-0">
+                                <li><a href="">
+                                    Breakfast Casserole Recipes</a></li>
+                                <li><a href="">
+                                    Egg Recipes</a></li>
+                                <li><a href="">Frittata Recipes</a></li>
+                                <li><a href="">Omelet Recipes</a></li>
+                                <li><a href="">
+                                    Pancake Recipes</a></li>
+                                <li><a href="">
+                                    Waffle Recipes</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100 bg-transparent">
+                            <img src="./img/explore-breakfast-img.webp" class="card-img-top w-75 mx-3 my-2 align-self-center" alt="...">
+                            <div class="card-body text-center pt-0">
+                              <h5 class="card-title"><a href="">We Tried 8 Celebrity Scrambled Egg Methods and Found Some Breakfast Champions</a></h5>
+                              <p class="card-text">You'll be adding these favorite recipes from celebs and celeb chefs to your breakfast lineup.</p>
+                            <!-- </div>
+                            <div class="card-footer">
+                                <a class="read-more-tag">Read more <i class="fa-solid fa-caret-right"></i></a>
+                              </div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="site-cache"></div>
+</body>
+
+</html>

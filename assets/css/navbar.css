@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700;800&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,900;1,600&display=swap');
+
+#navbar {
+    align-items: center;
+    justify-content: center;
+    padding: .8em;
+    z-index: 100;
+    flex-wrap: nowrap;
+    position: sticky !important;
+    top: 0 !important;
+    background-color: #fff;
+    box-shadow: 0px 6px 8px -2px rgba(0, 0, 0, 0.16);
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left i {
+    font-size: 1.5em;
+    margin-right: .3em;
+    color: rgb(96, 96, 96);
+    cursor: pointer;
+}
+
+#logo {
+    margin-left: 1em;
+    color: #F15025;
+    font-size: 1.7em;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
+
+#logo i {
+    font-size: 1em;
+    color: #F7AF31;
+    margin-left: .1em;
+}
+
+.nav-right {
+    font-size: 1em;
+}
+
+#user {
+    margin-right: .6em;
+}
+
+#join, #get-reciepe, #login {
+    cursor: pointer;
+}
+
+#join, #get-reciepe {
+    font-size: .9em;
+    font-weight: bold;
+}
+
+#join> i {
+    margin-right: .6em;
+}
+
+#login {
+    border-left: .1em solid #ccc;
+    border-right: .1em solid #ccc;
+    padding: .2em 1em;
+    margin: .1em .7em;
+    font-size: .8em;
+}
+
+/*--------------------------------------------------------------*/
+
+.join-collapse {
+    position: absolute;
+    background-color: #fff;
+    color: rgb(102, 102, 102);
+    border-radius: .3em;
+    top: 4em;
+    display: none;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    width: 12em;
+}
+
+.join-collapse .menu-header {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bolder;
+    padding: 1em 1em .7em 1.6em !important;
+}
+
+.join-collapse .menu-item {
+    text-transform: capitalize;
+    list-style: none;
+    padding: 1em 1.5em;
+    width: 100%;
+    font-size: 14px;
+}
+
+.join-collapse .menu-item:hover {
+    background-color: #f2f2f2;
+}
+
+.join-collapse .menu-item a:hover {
+    text-decoration: none;
+}
+
+.join-collapse hr {
+    width: 90%;
+}
+
+/*----------Explore altindaki navbar-------------*/
+
+.explore #navbar {
+    position: relative;
+}
+
+.explore .box-model #navbar #logo {
+    margin-left: .2em;
+    font-size: 1.5em;
+}
+
+.explore .box-model #navbar #logo i {
+    font-size: .8em;
+}
+
+.explore .box-model #navbar .nav-right {
+    font-size: .9em;
+}
+
+.explore .box-model #navbar #user {
+    margin-right: .6em;
+    margin-left: .6em;
+}
+
+.explore .box-model #navbar #join, .explore .box-model #navbar #get-reciepe {
+    font-size: .8em;
+}
+
+.explore .box-model #navbar #media-links {
+    padding-right: .8em;
+    border-right: .1em solid #ccc;
+    font-size: .9em;
+}
+
+.explore .box-model #navbar #media-links .sm-link:not(:last-child) {
+    margin-right: .5em;
+}
+
+.explore-join-collapse {
+    width: 10em;
+    left: 32.5em;
+}
+
+.explore-join-collapse .menu-item {
+    padding: .6em 1.2em;
+    font-size: 12px;
+}
+
+.explore-join-collapse .menu-header {
+    font-size: 10px;
+    padding: .7em .7em .3em 1.6em !important;
+}
+
+
+
+/* elave class elave edib toggle lerini deyisdirmek yadindan cizmasin */

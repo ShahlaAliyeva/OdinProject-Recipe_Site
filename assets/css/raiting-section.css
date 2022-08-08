@@ -1,0 +1,79 @@
+/* #F15025 */
+
+.raiting-card, .raiting-card img {
+    position: relative;
+}
+
+.raiting-card a.save-icon i {
+    position: absolute;
+    z-index: 10;
+    color: #f5f5f5;
+    font-weight: lighter;
+    font-size: 1.1em;
+    background-color: #d74b21;
+    padding: .9em;
+    border-radius: 50%;
+    top: .5em;
+    right: .5em;
+}
+
+.raiting-card a.save-icon i:hover {
+    background-color: #b53811;
+}
+
+.raiting-card a h5 {
+    font-weight: 700;
+}
+
+.raiting-card .card-text {
+    font-size: .9em;
+}
+/* .raiting-card .raiting-stars {
+    align-items: center;
+} */
+
+.raiting-card .checked,
+.raiting-card .fa-star-half-stroke {
+    color: #F15025;
+}
+
+.raiting-card .fa-regular, .raiting-card .raiting-count{
+    color: rgb(88, 88, 88);
+}
+
+.raiting-card .raiting-stars span {
+    display: inline;
+}
+
+.raiting-card .raiting-count {
+    font-size: .9em;
+    font-weight: 600;
+}
+
+.chief-name {
+    margin-top: 1em;
+    font-size: .8em;
+    letter-spacing: .5px;
+}
+
+.chief-name a {
+    text-decoration: underline;
+    text-decoration-thickness: .1px;
+    text-decoration-color: #F15025;
+}
+
+.chief-name a:hover {
+    text-decoration-thickness: 2.2px;
+}
+
+#raiting-section .raiting-card {
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 3px;
+}
+
+#raiting-section {
+    align-items: stretch;
+    display: flex;
+    align-items: stretch;
+    padding-bottom: 1em;
+}
